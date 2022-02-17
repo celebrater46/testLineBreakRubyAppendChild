@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+html{
+    font-size: 20px;
+}
+
+body {
+    background-color: black;
+    color: silver;
+    text-align: center;
+    font-family: 'Kosugi', 'Noto Serif JP', Hiragino Kaku Gothic ProN W3, Helvetica, Meiryo, Tahoma;
+}
+
+div.page{
+    width: 600px;
+    height: 77vh;
+    padding: 5vh 5vw;
+    margin: 5vh 5vw;
+    background-color: #333333;
+}
+
+p{
+    font-size: 1rem;
+    /*text-align: left;*/
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    line-height: 150%;
+}
+
+p#final_line{
+    overflow: hidden;
+    /*height: 35px;*/
+}
+
+a{
+    color: goldenrod;
+    text-decoration: none;
+}
+
+a:hover{
+    color: gold;
+}
