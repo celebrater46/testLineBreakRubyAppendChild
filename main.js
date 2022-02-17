@@ -91,11 +91,13 @@ const addP = () => {
     console.log(encodedArray);
     let p = document.createElement("p");
     p.id = ("final_line");
-    if(encodedArray[0].indexOf("<ruby>") > -1){
-        p.style.height = rubyLineHeight + "px";
-    } else {
-        p.style.height = lineHeight + "px";
-    }
+    p.style.height = lineHeight + "px"; // ルビを含めた高さにすると次の行のルビが見えてしまう
+    // if(encodedArray[0].indexOf("<ruby>") > -1){
+    //     p.style.height = lineHeight + "px";
+    //     // p.style.height = rubyLineHeight + "px";
+    // } else {
+    //     p.style.height = lineHeight + "px";
+    // }
     p.innerHTML = encodedArray[0] + encodedArray[1];
     div.appendChild(p);
 }
